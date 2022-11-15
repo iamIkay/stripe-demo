@@ -37,8 +37,6 @@ dependencies:
   flutter_stripe: ^5.0.0
   flutter_dotenv: ^5.0.2
   http: ^0.13.5
-  progress_dialog_null_safe: ^1.0.7
-  flutter_credit_card: ^3.0.4
 
 dev_dependencies:
   flutter_test:

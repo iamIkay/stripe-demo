@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
         paymentIntent = null;
       }).onError((error, stackTrace) {
-        print('Error is:--->$error $stackTrace');
+        throw Exception(error);
       });
     } on StripeException catch (e) {
       print('Error is:---> $e');
@@ -122,7 +122,6 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         body: body,
       );
-      print(json.decode(response.body));
       return json.decode(response.body);
     } catch (err) {
       throw Exception(err.toString());
